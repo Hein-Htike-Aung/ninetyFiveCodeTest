@@ -1,0 +1,35 @@
+.librarianLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .loginCard {
+    width: 30%;
+    height: 300px;
+    border: 2px solid lightgray;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginCardWrapper {
+      width: 80%;
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      flex-direction: column;
+
+      form {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        .loginCardFooter {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

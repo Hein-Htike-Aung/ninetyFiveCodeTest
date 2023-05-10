@@ -1,0 +1,197 @@
+@import "./colors.scss";
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  &-color {
+    color: rgb(114, 114, 210);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.error {
+  color: crimson;
+  font-size: 14px;
+}
+
+.lightblueBudget {
+  color: $primary-color;
+}
+
+.successBudget {
+  color: rgb(34, 154, 22);
+  background-color: rgba(84, 214, 44, 0.16);
+  width: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.errorBudget {
+  color: rgb(154, 22, 22);
+  background-color: rgba(214, 44, 44, 0.16);
+  width: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.warnBudget {
+  color: $light-warn-color;
+}
+
+@mixin border-bottom {
+  margin: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-bottom-width: 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-bottom-width: thin;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.select {
+  padding: 10px;
+  outline: none;
+  border: 1px solid lightgray;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid gray;
+  }
+
+  &:focus {
+    border: 1px solid $primary-color;
+  }
+}
+
+.errorMsg {
+  color: crimson;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.tableIconsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .tableIcon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(99, 115, 129, 0.08);
+    }
+  }
+}
+
+.search {
+  border: 1px solid lightgray;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  .searchInput {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}
+
+.inputError {
+  border: 1px solid crimson !important;
+}
+
+.fileError {
+  border: 1px dotted crimson !important;
+}
+
+.textError {
+  color: red !important;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+  }
+  .input,
+  .textarea,
+  .select {
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+
+    &:hover {
+      border: 1px solid gray;
+    }
+
+    &:focus {
+      border: 1px solid $primary-color;
+    }
+  }
+}
+.MuiInputBase-root {
+  height: 44px;
+}
+
+.form-group-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
+  gap: 30px;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: end;
+}

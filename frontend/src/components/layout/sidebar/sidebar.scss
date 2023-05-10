@@ -1,0 +1,62 @@
+@import "../../../assets/index";
+
+.sidebar {
+  @include themify($themes) {
+    background-color: themed(bg);
+    height: 100%;
+  }
+
+  .logo {
+    background: url("../../../assets/logo.svg");
+    width: 180px;
+    padding-top: 40px;
+    background-repeat: no-repeat;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-left: 30px;
+
+    @include mobile {
+      .menuIcon {
+        display: none;
+      }
+    }
+
+    .menuIcon {
+      font-weight: 200;
+      color: $primary-color;
+      font-size: 0px;
+    }
+
+    .menuText {
+      font-weight: 300;
+      font-size: 15px;
+      margin: 5px 0;
+    }
+  }
+
+  .menuLinkLight {
+    display: inline-block;
+    width: 100%;
+
+    &.active {
+      color: $primary-color;
+      border-right: 2px solid $primary-color;
+      background-color: #e3effc;
+    }
+  }
+
+  .menuLinkDark {
+    display: inline-block;
+    width: 100%;
+
+    &.active {
+      color: $primary-color;
+      border-right: 2px solid $primary-color;
+    }
+  }
+}

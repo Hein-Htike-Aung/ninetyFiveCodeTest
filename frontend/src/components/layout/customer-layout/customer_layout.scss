@@ -1,0 +1,21 @@
+.customerLayout {
+  .customerLayoutNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: lightblue;
+
+    .navItem {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .customerLayoutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+  }
+}

@@ -1,0 +1,37 @@
+.borrow {
+  width: 60%;
+  .borrowWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    min-width: 80%;
+
+    border: 1px solid lightblue;
+    .left {
+      flex: 1;
+      .bookImg {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}
